@@ -1,0 +1,232 @@
+:root {
+    --text-color: rgb(0, 50, 59);
+    --accent-color: hsl(39, 87%, 88%);
+}
+
+@font-face {
+    font-family: nickson;
+    src: url('fonts/SSNicksonTwo.woff');
+}
+
+@font-face {
+    font-family: 'kg_second_chances_solidRg';
+    src: url('fonts/kgsecondchancessolid-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: nickson, arial, Helvetica, sans-serif;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(142, 226, 7);
+    height: 100dvh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    margin: 2rem;
+    text-align: center;
+}
+
+h2, h2 a {
+    font-size: 3rem;
+    font-weight: 900;
+    /* letter-spacing: -0.2rem; */
+    color: var(--accent-color);
+    font-family: 'kg_second_chances_solidRg';
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: var(--text-color)
+}
+
+.minidona-descripcion {
+    display: block;
+    font-size: 1.2rem;
+    /* letter-spacing: -0.05rem; */
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+
+.nombre {
+    font-weight: 700;
+    display: block;
+    margin-top: 0.2rem;
+}
+
+
+h1 {
+    padding: auto auto;
+    color: var(--text-color);
+    font-size: 10rem;
+    /* letter-spacing: -0.5rem; */
+    font-weight: 900;
+    /* text-transform: uppercase; */
+    text-align: center;
+    line-height: 10rem;
+
+    font-family: 'kg_second_chances_solidRg', sans-serif; 
+}
+
+-signo {
+    position: relative;
+    top: -1.5rem;
+    /* color:red; */
+}
+
+.under-construction {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    text-wrap: balance;
+    /* letter-spacing: -0.06rem; */
+}
+
+footer {
+    margin: 3rem;
+}
+
+h3 {
+    color: rgb(0, 50, 59);
+    width: 100vw;
+    font-size: 1.4rem;
+    padding: 2rem;
+    margin: auto auto;
+    /* letter-spacing: -0.06rem; */
+    margin-bottom: -1rem;
+    text-align: center;
+    text-wrap: balance;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a, li {
+    color: var(--accent-color);
+    margin: 1rem;
+    font-size: 3rem;
+    transition: 200ms ease;
+}
+
+
+li:hover a,
+li:hover {
+    color: var(--text-color);
+    transform: scale(1.5);
+}
+
+#email-red {
+    color:rgb(234, 52, 52);
+}
+
+#email-popup {
+    font-size: 0.2rem;
+    color: var(--text-color);
+    font-weight: 300;
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    pointer-events: none;
+    margin-left: 30rem;
+    opacity: 0;
+    transition: 200ms ease-in;
+}
+
+#email-icon:hover + #email-popup {
+    font-size: 1.5rem;
+    /* color: red; */
+    font-weight: 300;
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    opacity: 100;
+    margin-top: -8rem;
+    margin-left: 0rem;
+}
+
+
+#email-icon-active i{
+    margin-top: 1.1rem;
+    color: gray
+}
+
+@media (max-width: 480px) {
+    
+    body {
+        /* background-color: red; */
+    }
+
+    h1 {
+        font-size: 6.5rem;
+        line-height: 6rem;
+        padding: 1rem;
+        margin-top: 4rem;
+    }
+
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+    }
+
+    ul {
+         margin: 0rem;
+        padding: 1rem;
+    }
+
+    li {
+        margin: 0rem;
+    }
+
+    #email-icon:hover + #email-popup {
+        opacity: 0;
+    }
+
+    .minidona-descripcion {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .nombre {
+        margin-top: -0.2rem;
+    }
+
+    .under-construction {
+        margin-top: 0rem;
+    }
+
+    a, li {
+        font-size: 2rem
+    }
+
+    h2 {
+        margin-top: -1rem;
+    }
+}
