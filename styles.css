@@ -24,7 +24,7 @@
 }
 
 html {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
@@ -188,11 +188,11 @@ li:hover {
         font-size: 6.5rem;
         line-height: 6rem;
         padding: 1rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
 
     h3 {
-        margin-top: -1rem;
+        margin-top: -2rem;
         margin-bottom: -2rem;
     }
 
