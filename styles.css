@@ -192,17 +192,22 @@ li:hover {
     }
 
     h3 {
-        margin-top: 1rem;
+        margin-top: -1rem;
         margin-bottom: -2rem;
     }
 
     ul {
-         margin: 0rem;
+        width: 80%;
+        margin: auto auto;
         padding: 1rem;
     }
 
     li {
-        margin: 0rem;
+        margin: 0.5rem;
+    }
+
+    #email-popup {
+        margin-left: 10rem;
     }
 
     #email-icon:hover + #email-popup {
@@ -223,7 +228,7 @@ li:hover {
     }
 
     a, li {
-        font-size: 2rem
+        font-size: 2.5rem
     }
 
     h2 {
